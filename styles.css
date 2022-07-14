@@ -62,6 +62,8 @@ h1 {
   margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
 }
 
 .card-sedans .card-button {
