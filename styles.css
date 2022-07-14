@@ -1,0 +1,150 @@
+/* TAGS */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+/* CLASS */
+.container {
+  display: flex;
+  width: 60%;
+  background-color: red;
+  flex-direction: row;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 800px;
+  color: white;
+}
+
+.card-sedans {
+  flex: 30%;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-suvs {
+  flex: 30%;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  flex: 30%;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-sedans, .card-suvs, .card-luxury {
+  padding: 30px;
+}
+
+.card-description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  min-height: 150px;
+}
+
+.card-button {
+  border: solid 3px white;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  width: 150px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-sedans .card-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-suvs .card-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-luxury .card-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-sedans .card-button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+.card-suvs .card-button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+.card-luxury .card-button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+      height: auto;
+    }
+
+  .container {
+    display: flex;
+    width: 90%;
+    min-width: 150px;
+    flex: 100%;
+    background-color: red;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+  .card-sedans {
+    flex: calc(100% / 3);
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+  }
+
+  .card-suvs {
+    flex: calc(100% / 3);
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+  }
+
+  .card-luxury {
+    flex: calc(100% / 3);
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+  }
+
+  .card-description {
+    min-height: auto;
+  }
+
+  .card-button {
+    width: 200px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px
+  }
+}
