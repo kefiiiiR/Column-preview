@@ -15,6 +15,10 @@ h1 {
   font-weight: 700;
 }
 
+img {
+  width: 70px;
+}
+
 /* CLASS */
 .container {
   display: flex;
@@ -43,14 +47,17 @@ h1 {
 }
 
 .card-sedans, .card-suvs, .card-luxury {
-  padding: 30px;
+  padding: 25px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  min-height: 150px;
+  flex-grow: 1;
 }
 
 .card-button {
@@ -59,10 +66,9 @@ h1 {
   background-color: white;
   border-radius: 50px;
   width: 150px;
-  margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
-   transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .card-sedans .card-button {
